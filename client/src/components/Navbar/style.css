@@ -26,12 +26,18 @@
     margin-top: 15px;
 }
 
-.search-box {
-    float: right;
-    margin-right: 30px;
-    vertical-align : middle;
+.fa-search {
+    color: white;
 }
 
-.btn {
-    background-color: red;
+.search-form {
+    float: right;
+    margin-right: 30px;
 }
+
+
+
+/* .search-btn {
+    background-color: red;
+    float: right;
+} */
