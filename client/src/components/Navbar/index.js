@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { NavLink, withRouter } from "react-router-dom";
-import { Navbar, Nav } from "react-bootstrap";
+import { Navbar, Nav, InputGroup, FormControl, Button } from "react-bootstrap";
 import "./style.css";
 
 class Navigation extends Component {
@@ -9,7 +9,7 @@ class Navigation extends Component {
     render() {
         return (
             <Navbar>
-                <Navbar.Brand><i className="fab fa-pagelines"></i></Navbar.Brand>
+                <Navbar.Brand>MS</Navbar.Brand>
                 <Nav className="nav nav-tabs mr-auto">
                     <NavLink to="/" className={window.location.pathname === "/" ? "active navlink" : "navlink"}>
                         Home
@@ -24,6 +24,15 @@ class Navigation extends Component {
                         Contact
                     </NavLink>
                 </Nav>
+                <InputGroup className="mb-3 search-box">
+                    <FormControl
+                        placeholder="s e a r c h"
+                        aria-label="searchbox"
+                        aria-describedby="search"
+                        className="search-form"
+                    />
+                    <Button id="search" className="btn">Search</Button>
+                </InputGroup>
             </Navbar>
         );
     }
