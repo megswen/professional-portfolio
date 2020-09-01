@@ -1,0 +1,13 @@
+.fa-search {
+    color: white;
+}
+
+.search-form {
+    float: right;
+    margin-right: 30px;
+    margin: 11px 30px 11px 30px;
+}
+
+.search-input {
+    border: none;
+}

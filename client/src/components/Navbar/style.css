@@ -2,42 +2,27 @@
     height: 60px;
     background-color: rgb(44, 44, 44);
     border-radius: 0;
+    position: fixed;
+    width: 100%;
 }
-
-/* .fa-pagelines {
-    font-size: 50px;
-    color: white;
-    height: 100px;
-    width: 100px;
-} */
 
 .navbar-brand {
     color: white;
-    font-size: 30px;
+    font-size: 40px;
+    margin-top: 3px;
 }
 
 .navlink {
     color: white;
-    margin: 10px 10px 10px 10px;
+    margin: 10px 15px 10px 15px;
+}
+
+.navlink:hover {
+    color: rgb(122, 202, 202);
+    text-decoration: none;
 }
 
 .nav-tabs {
     border-bottom: none;
-    margin-top: 15px;
+    margin-top: 18px;
 }
-
-.fa-search {
-    color: white;
-}
-
-.search-form {
-    float: right;
-    margin-right: 30px;
-}
-
-
-
-/* .search-btn {
-    background-color: red;
-    float: right;
-} */
