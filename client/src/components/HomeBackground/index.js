@@ -9,18 +9,21 @@ class HomeBackground extends Component {
     render() {
         const mystyle = {
             color: "white",
-            backgroundColor: "plum",
+            backgroundColor: "rgb(238, 184, 206)",
             padding: "15px 25px 15px 25px",
             zIndex: "3",
-            marginTop: "400px",
+            marginTop: "500px",
+            // marginRight: "400px", ALSO CHANGE COL-LG-12 TO TEXT-RIGHT
             border: "none",
-            borderRadius: "30px"
+            borderRadius: "30px",
+            boxShadow: "0.5px 0.5px 5px gray",
+            textShadow: "1px 1px 5px gray"
         };
 
         return (
             <div className="home-background container-fluid">
                 <div className="row">
-                    <div className="col-lg-12">
+                    <div className="col-lg-12 text-center">
                         <HomeButton 
                             text="my portfolio"
                             style={mystyle}
