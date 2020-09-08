@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import "./style.css";
+import Button from "react-bootstrap";
 import Navigation from "../../components/Navbar";
+import HomeBackground from "../../components/HomeBackground";
 
 class Home extends Component {
     state = {
@@ -13,6 +15,7 @@ class Home extends Component {
         return (
             <>
                 <Navigation />
+                <HomeBackground />
             </>
         );
     }
