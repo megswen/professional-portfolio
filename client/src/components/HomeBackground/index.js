@@ -7,12 +7,22 @@ class HomeBackground extends Component {
 
 
     render() {
+        const mystyle = {
+            color: "white",
+            backgroundColor: "green",
+            padding: "10px",
+            fontFamily: "Arial",
+            zIndex: "3",
+            margin: "200px"
+        };
+
         return (
-            <div className="home-background container-fluid text-center">
+            <div className="home-background container-fluid">
                 <div className="row">
-                    <div className="col-lg-12">
+                    <div className="col-lg-12 d-flex">
                         <HomeButton 
-                            text="portfolio"
+                            text="this is a test"
+                            style={mystyle}
                         />
                     </div>
                 </div>

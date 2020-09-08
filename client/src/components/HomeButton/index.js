@@ -6,9 +6,11 @@ function HomeButton(props) {
     return (
         <ReactBootstrap.Button 
             className="home-btn btn-lg"
-            // onClick={props.onClick}
-            // text={props.text}
-        />
+            onClick={props.onClick}
+            style={props.style}
+        >
+            {props.text}
+        </ReactBootstrap.Button>
     );
 }
 
