@@ -4,20 +4,32 @@ import HomeButton from "../HomeButton";
 
 class HomeBackground extends Component {
     // Function for handling button click
+    state = {
+       
+    };
+
+    // WORKING ON THESE
+    goToPortfolio = () => {
+
+    }
+
+    handleButtonClick = event => {
+        event.preventDefault();
+
+    }
 
 
     render() {
-        const mystyle = {
+        const buttonStyle = {
             color: "white",
             backgroundColor: "rgb(238, 184, 206)",
             padding: "15px 25px 15px 25px",
-            zIndex: "3",
             marginTop: "500px",
             // marginRight: "400px", ALSO CHANGE COL-LG-12 TO TEXT-RIGHT
             border: "none",
             borderRadius: "30px",
             boxShadow: "0.5px 0.5px 5px gray",
-            textShadow: "1px 1px 5px gray"
+            textShadow: "1px 1px 5px gray",
         };
 
         return (
@@ -25,8 +37,9 @@ class HomeBackground extends Component {
                 <div className="row">
                     <div className="col-lg-12 text-center">
                         <HomeButton 
+                            onClick={this.handleButtonClick}
+                            style={buttonStyle}
                             text="my portfolio"
-                            style={mystyle}
                         />
                     </div>
                 </div>
