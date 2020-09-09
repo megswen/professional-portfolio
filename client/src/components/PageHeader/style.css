@@ -1,7 +1,12 @@
 .page-header {
     color: white;
-    font-size: 70px;
+    font-size: 80px;
     margin-top: 150px;
     font-family: 'Raleway', sans-serif;
     border-bottom: none;
+}
+
+.page-subheader {
+    color: white;
+    font-size: 30px;
 }

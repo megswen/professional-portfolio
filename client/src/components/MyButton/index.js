@@ -2,7 +2,7 @@ import React from "react";
 import "./style.css";
 import * as ReactBootstrap from "react-bootstrap";
 
-function HomeButton(props) {
+function MyButton(props) {
     return (
         <ReactBootstrap.Button 
             className="home-btn btn-lg"
@@ -14,4 +14,4 @@ function HomeButton(props) {
     );
 }
 
-export default HomeButton;
+export default MyButton;

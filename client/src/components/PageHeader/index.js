@@ -7,7 +7,7 @@ function PageHeader(props) {
         <ReactBootstrap.Row>
             <ReactBootstrap.Col>
                 <h1 className="page-header text-center">{props.header}</h1>
-                <h3 className="page-subheader text-center">{props.subheader}</h3>
+                <div className="page-subheader text-center">{props.subheader}</div>
             </ReactBootstrap.Col>
         </ReactBootstrap.Row>
     );

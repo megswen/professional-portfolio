@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./style.css";
-import HomeButton from "../HomeButton";
+import MyButton from "../MyButton";
 import PageHeader from "../PageHeader";
 
 
@@ -23,16 +23,17 @@ class HomeBackground extends Component {
 
 
     render() {
-        const buttonStyle = {
+        const homeButtonStyle = {
             color: "white",
-            backgroundColor: "rgb(238, 184, 206)",
+            backgroundColor: "rgb(192, 117, 180)",
             padding: "15px 25px 15px 25px",
-            marginTop: "300px",
+            marginTop: "250px",
             // marginRight: "400px", ALSO CHANGE COL-LG-12 TO TEXT-RIGHT
             border: "none",
             borderRadius: "30px",
-            boxShadow: "0.5px 0.5px 5px gray",
+            boxShadow: "0.5px 0.5px 5px darkgray",
             textShadow: "1px 1px 5px gray",
+            fontFamily: "'Raleway', sans-serif"
         };
 
         return (
@@ -40,13 +41,14 @@ class HomeBackground extends Component {
                 <div className="home-cover container-fluid">
                     <PageHeader
                         header="Hi, I'm Megan"
+                        subheader="Full-stack web developer"
                     />
                     <div className="row">
                         <div className="col-lg-12 text-center">
-                            <HomeButton 
+                            <MyButton 
                                 onClick={this.handleButtonClick}
-                                style={buttonStyle}
-                                text="my portfolio"
+                                style={homeButtonStyle}
+                                text="MY PORTFOLIO"
                                 href="/portfolio"
                             />
                         </div>
