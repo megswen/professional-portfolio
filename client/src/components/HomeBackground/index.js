@@ -5,17 +5,18 @@ import HomeButton from "../HomeButton";
 class HomeBackground extends Component {
     // Function for handling button click
     state = {
-       
+        button: "",
+        isClicked: "false"
     };
 
-    // WORKING ON THESE
+    // WORKING ON THESE 9/9
     goToPortfolio = () => {
 
     }
 
     handleButtonClick = event => {
         event.preventDefault();
-
+        if (this.state.button)
     }
 
 
