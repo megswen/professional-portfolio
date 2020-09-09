@@ -37,17 +37,19 @@ class HomeBackground extends Component {
 
         return (
             <div className="home-background container-fluid">
-                <PageHeader
-                    header="Hi, I'm Megan"
-                />
-                <div className="row">
-                    <div className="col-lg-12 text-center">
-                        <HomeButton 
-                            onClick={this.handleButtonClick}
-                            style={buttonStyle}
-                            text="my portfolio"
-                            href="/portfolio"
-                        />
+                <div className="home-cover container-fluid">
+                    <PageHeader
+                        header="Hi, I'm Megan"
+                    />
+                    <div className="row">
+                        <div className="col-lg-12 text-center">
+                            <HomeButton 
+                                onClick={this.handleButtonClick}
+                                style={buttonStyle}
+                                text="my portfolio"
+                                href="/portfolio"
+                            />
+                        </div>
                     </div>
                 </div>
             </div>
