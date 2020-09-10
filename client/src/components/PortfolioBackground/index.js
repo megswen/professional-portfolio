@@ -12,7 +12,8 @@ class PortfolioBackground extends Component {
         const portfolioCardStyle = {
             backgroundColor: "white",
             color: "gray",
-            margin: "30px"
+            margin: "30px",
+            width: "25rem"
         };
 
         const portfolioButtonStyle = {
@@ -29,25 +30,11 @@ class PortfolioBackground extends Component {
         return (
             <div className="portfolio-background container-fluid">
                 <PageHeader
-                    header="Portfolio"
+                    header="PORTFOLIO"
                 />
                 <div className="row">
                     <div className="col-lg-12 text-center">
-                        {/* Cards with portfolio pics here */}
-                        <Card style={portfolioCardStyle}>
-                            <Card.Img variant="top" src="" />
-                            <Card.Body>
-                                <Card.Title>My Project</Card.Title>
-                                    <Card.Text>
-                                        Some quick example text to build on the card title and make up the bulk of
-                                        the card's content.
-                                    </Card.Text>
-                                <MyButton 
-                                    text="Check It Out"
-                                    style={portfolioButtonStyle}
-                                />
-                            </Card.Body>
-                        </Card>
+                        <MyCard />
                     </div>
                 </div>
             </div>
