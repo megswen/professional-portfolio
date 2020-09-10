@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./style.css";
 import PageHeader from "../PageHeader";
 import MyCard from "../MyCard";
+import rockfish from "../../assets/images/rockfish.png";
 
 
 class PortfolioBackground extends Component {
@@ -11,8 +12,17 @@ class PortfolioBackground extends Component {
         const portfolioCardStyle = {
             backgroundColor: "white",
             color: "gray",
-            margin: "30px",
-            width: "25rem"
+            margin: "50px",
+            width: "600px"
+        };
+
+        const portfolioImageStyle = {
+            backgroundSize: "cover",
+            top: "0",
+            padding: "0",
+            width: "600px",
+            height: "auto"
+
         };
 
         const portfolioButtonStyle = {
@@ -34,13 +44,16 @@ class PortfolioBackground extends Component {
                 <div className="row">
                     <div className="col-lg-12 text-center">
                         <MyCard 
-                            className="portfolio-card"
+                            // className="portfolio-card"
                             cardStyle={portfolioCardStyle}
-                            image="../../assets/images/test-image.png"
+                            image={rockfish}
+                            imageStyle={portfolioImageStyle}
+                            className="img-fluid"
                             title="Project"
                             description="This is my project"
                             buttonText="VIEW WEBSITE"
                             buttonStyle={portfolioButtonStyle}
+                            // onClick={}
                         />
                     </div>
                 </div>
