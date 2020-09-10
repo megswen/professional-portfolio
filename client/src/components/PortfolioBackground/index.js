@@ -1,8 +1,7 @@
 import React, { Component } from "react";
 import "./style.css";
 import PageHeader from "../PageHeader";
-import { Card } from "react-bootstrap";
-import MyButton from "../MyButton";
+import MyCard from "../MyCard";
 
 
 class PortfolioBackground extends Component {
@@ -34,7 +33,15 @@ class PortfolioBackground extends Component {
                 />
                 <div className="row">
                     <div className="col-lg-12 text-center">
-                        <MyCard />
+                        <MyCard 
+                            className="portfolio-card"
+                            cardStyle={portfolioCardStyle}
+                            image="../../assets/images/test-image.png"
+                            title="Project"
+                            description="This is my project"
+                            buttonText="VIEW WEBSITE"
+                            buttonStyle={portfolioButtonStyle}
+                        />
                     </div>
                 </div>
             </div>
