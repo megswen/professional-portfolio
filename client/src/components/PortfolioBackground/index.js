@@ -3,6 +3,7 @@ import "./style.css";
 import PageHeader from "../PageHeader";
 import MyCard from "../MyCard";
 import rockfish from "../../assets/images/rockfish.png";
+import allyApp from "../../assets/images/allyapp.png";
 
 
 class PortfolioBackground extends Component {
@@ -13,14 +14,15 @@ class PortfolioBackground extends Component {
             backgroundColor: "white",
             color: "gray",
             margin: "50px",
-            width: "600px"
+            width: "500px",
+            display: "inline-block"
         };
 
         const portfolioImageStyle = {
             backgroundSize: "cover",
             top: "0",
             padding: "0",
-            width: "600px",
+            width: "500px",
             height: "auto",
             borderTopLeftRadius: "5px",
             borderTopRightRadius: "5px"
@@ -30,7 +32,7 @@ class PortfolioBackground extends Component {
         const portfolioButtonStyle = {
             color: "white",
             backgroundColor: "rgb(192, 117, 180)",
-            padding: "15px 25px 15px 25px",
+            padding: "10px 20px 10px 20px",
             border: "none",
             borderRadius: "30px",
             boxShadow: "0.5px 0.5px 5px darkgray",
@@ -46,7 +48,7 @@ class PortfolioBackground extends Component {
                     header="PORTFOLIO"
                 />
                 <div className="row">
-                    <div className="col-lg-12 text-center">
+                    <div className="col-lg-12 justify-content-center">
                         <MyCard 
                             // className="portfolio-card"
                             cardStyle={rockfishCardStyle}
@@ -56,6 +58,19 @@ class PortfolioBackground extends Component {
                             title="ROCKFISH CONSERVATION"
                             description="An app to help fishermen on the Pacific Coast identify endangered species of Rockfish and educate 
                             them on safe release methods to preserve those species."
+                            buttonText="VIEW WEBSITE"
+                            buttonStyle={portfolioButtonStyle}
+                            // onClick={}
+                        />
+                        <MyCard 
+                            // className="portfolio-card"
+                            cardStyle={rockfishCardStyle}
+                            image={allyApp}
+                            imageStyle={portfolioImageStyle}
+                            className="img-fluid"
+                            title="THE ALLY APP"
+                            description="An app that provides resources for people who want to be an ally for people of color but aren’t 
+                            sure where to start. Includes a vast library of resources on racism, amd a help needed bulletin board."
                             buttonText="VIEW WEBSITE"
                             buttonStyle={portfolioButtonStyle}
                             // onClick={}
