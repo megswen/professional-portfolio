@@ -6,14 +6,13 @@ import MyButton from "../MyButton";
 function MyCard(props) {
     return (
         <Card 
-            // className={props.className}
+            className={props.className}
             style={props.cardStyle}
         >
             <Card.Img 
                 variant="top" 
                 src={props.image} 
                 style={props.imageStyle}
-                className={props.className}
             />
             <Card.Body>
                 <Card.Title>{props.title}</Card.Title>

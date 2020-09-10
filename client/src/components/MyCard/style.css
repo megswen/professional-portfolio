@@ -4,12 +4,14 @@
 
 .card-body {
     padding: 10px;
-    height: 250px;
+    height: 230px;
 }
 
 .card-title {
     font-family: 'Raleway', sans-serif;
     font-size: 30px;
+    margin: 15px;
+    font-weight: bold;
 }
 
 .card-text {

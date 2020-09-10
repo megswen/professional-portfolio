@@ -31,7 +31,7 @@ class PortfolioBackground extends Component {
 
         const portfolioButtonStyle = {
             color: "white",
-            backgroundColor: "rgb(192, 117, 180)",
+            backgroundColor: "rgb(44, 44, 44)",
             padding: "10px 20px 10px 20px",
             border: "none",
             borderRadius: "30px",
@@ -39,7 +39,7 @@ class PortfolioBackground extends Component {
             textShadow: "1px 1px 5px gray",
             fontFamily: "'Raleway', sans-serif",
             fontSize: "15px",
-            margin: "15px"
+            margin: "15px 15px 0px 15px"
         };
 
         return (
@@ -50,13 +50,12 @@ class PortfolioBackground extends Component {
                 <div className="row">
                     <div className="col-lg-12 justify-content-center">
                         <MyCard 
-                            // className="portfolio-card"
+                            className="portfolio-card"
                             cardStyle={rockfishCardStyle}
                             image={rockfish}
                             imageStyle={portfolioImageStyle}
-                            className="img-fluid"
                             title="ROCKFISH CONSERVATION"
-                            description="An app to help fishermen on the Pacific Coast identify endangered species of Rockfish and educate 
+                            description="Helps fishermen on the Pacific Coast identify endangered species of Rockfish and educate 
                             them on safe release methods to preserve those species."
                             buttonText="VIEW WEBSITE"
                             buttonStyle={portfolioButtonStyle}
@@ -69,7 +68,7 @@ class PortfolioBackground extends Component {
                             imageStyle={portfolioImageStyle}
                             className="img-fluid"
                             title="THE ALLY APP"
-                            description="An app that provides resources for people who want to be an ally for people of color but aren’t 
+                            description="Provides resources for people who want to be an ally for people of color but aren’t 
                             sure where to start. Includes a vast library of resources on racism, amd a help needed bulletin board."
                             buttonText="VIEW WEBSITE"
                             buttonStyle={portfolioButtonStyle}
