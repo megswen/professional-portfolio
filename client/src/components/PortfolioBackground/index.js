@@ -16,18 +16,19 @@ class PortfolioBackground extends Component {
         };
 
         const portfolioCardStyle = {
-            backgroundColor: "white",
+            backgroundColor: "rgb(236, 235, 235)",
             color: "gray",
             margin: "50px",
             width: "500px",
-            display: "inline-block"
+            display: "inline-block",
+            boxShadow: "2px 2px 10px darkgray"
         };
 
         const portfolioImageStyle = {
             backgroundSize: "cover",
             top: "0",
             padding: "0",
-            width: "498px",
+            width: "500px",
             height: "auto",
             borderTopLeftRadius: "5px",
             borderTopRightRadius: "5px"
@@ -68,7 +69,7 @@ class PortfolioBackground extends Component {
                             // onClick={}
                         />
                         <MyCard 
-                            // className="portfolio-card"
+                            className="portfolio-card"
                             cardStyle={portfolioCardStyle}
                             image={allyApp}
                             imageStyle={portfolioImageStyle}
