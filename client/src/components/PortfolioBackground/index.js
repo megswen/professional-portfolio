@@ -10,7 +10,12 @@ class PortfolioBackground extends Component {
     
 
     render() {
-        const rockfishCardStyle = {
+
+        const portfolioHeaderStyle = {
+            color: "gray"
+        };
+
+        const portfolioCardStyle = {
             backgroundColor: "white",
             color: "gray",
             margin: "50px",
@@ -22,7 +27,7 @@ class PortfolioBackground extends Component {
             backgroundSize: "cover",
             top: "0",
             padding: "0",
-            width: "500px",
+            width: "498px",
             height: "auto",
             borderTopLeftRadius: "5px",
             borderTopRightRadius: "5px"
@@ -46,12 +51,13 @@ class PortfolioBackground extends Component {
             <div className="portfolio-background container-fluid">
                 <PageHeader
                     header="PORTFOLIO"
+                    style={portfolioHeaderStyle}
                 />
                 <div className="row">
                     <div className="col-lg-12 justify-content-center">
                         <MyCard 
                             className="portfolio-card"
-                            cardStyle={rockfishCardStyle}
+                            cardStyle={portfolioCardStyle}
                             image={rockfish}
                             imageStyle={portfolioImageStyle}
                             title="ROCKFISH CONSERVATION"
@@ -63,7 +69,7 @@ class PortfolioBackground extends Component {
                         />
                         <MyCard 
                             // className="portfolio-card"
-                            cardStyle={rockfishCardStyle}
+                            cardStyle={portfolioCardStyle}
                             image={allyApp}
                             imageStyle={portfolioImageStyle}
                             className="img-fluid"

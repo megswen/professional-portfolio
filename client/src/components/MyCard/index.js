@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.css";
-import { Card } from "react-bootstrap";
+import { Card, Row, Col, Container } from "react-bootstrap";
 import MyButton from "../MyButton";
 
 function MyCard(props) {
@@ -10,7 +10,7 @@ function MyCard(props) {
             style={props.cardStyle}
         >
             <Card.Img 
-                variant="top" 
+                // variant="top" 
                 src={props.image} 
                 style={props.imageStyle}
             />
