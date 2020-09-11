@@ -12,21 +12,11 @@ class HomeBackground extends Component {
         isClicked: "false"
     };
 
-    // WORKING ON THESE 9/8
-    // goToPortfolio = () => {
-
-    // }
-
-    // handleButtonClick = event => {
-    //     event.preventDefault();
-    //     // if (this.state.button)
-    // }
-
     goToPortfolio = event => {
         event.preventDefault();
-        history.push("/portfolio");
+        // history.push("/portfolio");
+        console.log("PORTFOLIO BUTTON WORKS");
     }
-
 
     render() {
         const homeButtonStyle = {
@@ -44,20 +34,16 @@ class HomeBackground extends Component {
 
         return (
             <div className="home-background container-fluid">
-                <div className="home-cover container-fluid">
+                <div className="home-cover container-fluid text-center">
                     <PageHeader
                         header="Hi, I'm Megan"
                         subheader="Full-stack web developer"
                     />
-                    <div className="row">
-                        <div className="col-lg-12 text-center">
-                            <MyButton 
-                                onClick={this.goToPortfolio}
-                                style={homeButtonStyle}
-                                text="MY PORTFOLIO"
-                            />
-                        </div>
-                    </div>
+                    <MyButton 
+                        text="MY PORTFOLIO"
+                        style={homeButtonStyle}
+                        onClick={this.goToPortfolio}
+                    />
                 </div>
             </div>
         );
