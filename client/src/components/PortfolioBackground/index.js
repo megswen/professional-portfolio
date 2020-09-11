@@ -7,10 +7,19 @@ import allyApp from "../../assets/images/allyapp.png";
 
 
 class PortfolioBackground extends Component {
-    
+    // Functions for button clicks
+    goToRockfish = event => {
+        event.preventDefault();
+        console.log("ROCKFISH BUTTON WORKS");
+    }
+
+    goToAllyApp = event => {
+        event.preventDefault();
+        console.log("ALLY APP BUTTON WORKS");
+    }
+
 
     render() {
-
         const portfolioHeaderStyle = {
             color: "gray"
         };
@@ -66,7 +75,7 @@ class PortfolioBackground extends Component {
                             them on safe release methods to preserve those species."
                             buttonText="VIEW WEBSITE"
                             buttonStyle={portfolioButtonStyle}
-                            // onClick={}
+                            onClick={this.goToRockfish}
                         />
                         <MyCard 
                             className="portfolio-card"
@@ -79,7 +88,7 @@ class PortfolioBackground extends Component {
                             sure where to start. Includes a vast library of resources on racism, amd a help needed bulletin board."
                             buttonText="VIEW WEBSITE"
                             buttonStyle={portfolioButtonStyle}
-                            // onClick={}
+                            onClick={this.goToAllyApp}
                         />
                     </div>
                 </div>

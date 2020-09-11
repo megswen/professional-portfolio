@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./style.css";
 import MyButton from "../MyButton";
 import PageHeader from "../PageHeader";
+import history from "../../history.js";
 
 
 class HomeBackground extends Component {
@@ -20,6 +21,11 @@ class HomeBackground extends Component {
     //     event.preventDefault();
     //     // if (this.state.button)
     // }
+
+    goToPortfolio = event => {
+        event.preventDefault();
+        history.push("/portfolio");
+    }
 
 
     render() {
@@ -46,10 +52,9 @@ class HomeBackground extends Component {
                     <div className="row">
                         <div className="col-lg-12 text-center">
                             <MyButton 
-                                onClick={this.handleButtonClick}
+                                onClick={this.goToPortfolio}
                                 style={homeButtonStyle}
                                 text="MY PORTFOLIO"
-                                href="/portfolio"
                             />
                         </div>
                     </div>
