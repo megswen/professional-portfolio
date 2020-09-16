@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./style.css";
+import { useHistory } from 'react-router-dom';
 import PageHeader from "../PageHeader";
 import MyCard from "../MyCard";
 import rockfish from "../../assets/images/rockfish.png";
@@ -10,14 +11,13 @@ class PortfolioBackground extends Component {
     // Functions for button clicks
     goToRockfish = event => {
         event.preventDefault();
-        console.log("ROCKFISH BUTTON WORKS");
+        window.location.replace("https://rockfish-conservation.herokuapp.com/");
     }
 
     goToAllyApp = event => {
         event.preventDefault();
-        console.log("ALLY APP BUTTON WORKS");
+        window.location.replace("https://ally-resources.herokuapp.com/");
     }
-
 
     render() {
         const portfolioHeaderStyle = {
@@ -89,6 +89,7 @@ class PortfolioBackground extends Component {
                             buttonText="VIEW WEBSITE"
                             buttonStyle={portfolioButtonStyle}
                             onClick={this.goToAllyApp}
+                            link="https://ally-resources.herokuapp.com/"
                         />
                     </div>
                 </div>

@@ -21,7 +21,7 @@ class HomeBackground extends Component {
     render() {
         const homeButtonStyle = {
             color: "white",
-            backgroundColor: "rgb(192, 117, 180)",
+            backgroundColor: "rgb(231, 185, 194)",
             padding: "15px 25px 15px 25px",
             marginTop: "250px",
             // marginRight: "400px", ALSO CHANGE COL-LG-12 TO TEXT-RIGHT
