@@ -12,11 +12,15 @@ class Home extends Component {
     // Functions for home page
 
     render() {
+        const footerStyle = {
+            position: "fixed"
+        }
+
         return (
             <>
                 <Navigation />
                 <HomeBackground />
-                <Footer />
+                <Footer style={footerStyle} />
             </>
         );
     }
