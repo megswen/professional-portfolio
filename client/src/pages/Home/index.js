@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "./style.css";
-import Navigation from "../../components/Navbar";
 import HomeBackground from "../../components/HomeBackground";
 
 class Home extends Component {
@@ -13,7 +12,6 @@ class Home extends Component {
     render() {
         return (
             <>
-                <Navigation />
                 <HomeBackground />
             </>
         );

@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "./style.css";
-import Navigation from "../../components/Navbar";
 import PortfolioBackground from "../../components/PortfolioBackground";
 
 class Portfolio extends Component {
@@ -13,7 +12,6 @@ class Portfolio extends Component {
     render() {
         return (
             <>
-                <Navigation />
                 <PortfolioBackground />
             </>
         );

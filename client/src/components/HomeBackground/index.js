@@ -14,7 +14,7 @@ class HomeBackground extends Component {
 
     goToPortfolio = event => {
         event.preventDefault();
-        // history.push("/portfolio");
+        window.location.replace("/portfolio");
         console.log("PORTFOLIO BUTTON WORKS");
     }
 
@@ -42,7 +42,7 @@ class HomeBackground extends Component {
                     <MyButton 
                         text="MY PORTFOLIO"
                         style={homeButtonStyle}
-                        onClick={this.goToPortfolio}
+                        onClick={this.goToPortfolio.bind(this)}
                     />
                 </div>
             </div>

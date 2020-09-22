@@ -6,7 +6,7 @@ function MyButton(props) {
     return (
         <ReactBootstrap.Button 
             className="home-btn btn-lg"
-            onClick={props.onClick}
+            onClick={props.onClick.bind(this)}
             style={props.style}>
                 {props.text}
         </ReactBootstrap.Button>
