@@ -20,7 +20,6 @@ class Home extends Component {
             <>
                 <Navigation />
                 <HomeBackground />
-                <Footer style={footerStyle} />
             </>
         );
     }

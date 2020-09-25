@@ -5,7 +5,23 @@ import "./style.css";
 import SearchBar from "../SearchBar";
 
 class Navigation extends Component {
+    state = {
+        inputValue: [],
+        inputArray: []
+    }
+
     // Navbar functions
+    searchBarOnChange = event => {
+        // console.log("onChange is working: ", event.target.value);
+        
+        this.setState({
+            inputValue: event.target.value
+        })
+        console.log(this.state.inputValue)
+    }
+
+    // On SearchIcon submit, take the value in the search bar and put it into an array
+        // Then take that array and filter the site based on value
 
     render() {
         return (
@@ -25,7 +41,9 @@ class Navigation extends Component {
                         c o n t a c t
                     </NavLink>
                 </Nav>
-                <SearchBar />
+                <SearchBar 
+                    inputValue={this.state.inputValue}
+                    onChange={this.searchBarOnChange} />
             </Navbar>
         );
     }
