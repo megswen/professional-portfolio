@@ -27,6 +27,7 @@ class PortfolioBackground extends Component {
             backgroundColor: "rgb(236, 235, 235)",
             color: "gray",
             margin: "50px",
+            marginBottom: "140px",
             width: "500px",
             display: "inline-block",
             boxShadow: "2px 2px 10px darkgray"

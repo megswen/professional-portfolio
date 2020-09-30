@@ -36,7 +36,7 @@ class HomeBackground extends Component {
             <div className="home-background container-fluid">
                 <div className="home-cover container-fluid text-center">
                     <PageHeader
-                        header="Hi, I'm Megan"
+                        header="Megan Swenson"
                         subheader="Full-stack web developer"
                     />
                     <MyButton 

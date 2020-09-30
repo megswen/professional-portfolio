@@ -16,7 +16,7 @@ class About extends Component {
             <>
                 <Navigation />
                 <AboutBackground />
-                <Footer />
+                {/* <Footer /> */}
             </>
         );
     }
