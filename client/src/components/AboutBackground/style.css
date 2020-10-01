@@ -12,6 +12,11 @@
 }
 
 .about-cover {
-    background-color: rgb(77, 75, 75, 0.7);
+    background-color: rgb(77, 75, 75, 0.5);
     height: 100vh;
+}
+
+.about-text {
+    color: white;
+    font-size: 20px;
 }

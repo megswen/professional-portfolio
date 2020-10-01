@@ -19,6 +19,9 @@ class AboutBackground extends Component {
                             header="ABOUT"
                             style={aboutHeaderStyle}
                         />
+                        <div className="about-text text-center">
+                            About text goes here.
+                        </div>
                     </div>
                     <div className="col-lg-6 justify-content-center"></div>
                 </div>

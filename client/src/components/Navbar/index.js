@@ -41,9 +41,9 @@ class Navigation extends Component {
                         c o n t a c t
                     </NavLink>
                 </Nav>
-                <SearchBar 
+                {/* <SearchBar 
                     inputValue={this.state.inputValue}
-                    onChange={this.searchBarOnChange} />
+                    onChange={this.searchBarOnChange} /> */}
             </Navbar>
         );
     }
